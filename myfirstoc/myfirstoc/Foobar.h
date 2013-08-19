@@ -10,4 +10,6 @@
 
 @interface Foobar : NSObject
 
+extern long int calc(int value);
+
 @end
