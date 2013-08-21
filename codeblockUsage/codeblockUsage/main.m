@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+int useBlock(int (^plus)(int i)) {
+    return plus(4);
+}
+
 int main(int argc, const char *argv[]) {
 
     @autoreleasepool {
@@ -20,6 +24,12 @@ int main(int argc, const char *argv[]) {
         NSString *x = @"Hello BabyDuncan";
 
         myblock(x);
+
+        int (^plus)(int i) = ^(int i) {
+            return i + 1;
+        };
+
+        printf("result is %d \n", useBlock(plus));
 
     }
     return 0;
