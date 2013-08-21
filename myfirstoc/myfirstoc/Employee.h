@@ -22,7 +22,8 @@
 @property(nonatomic, retain) NSString *lastName;
 @property(nonatomic, retain) NSDate *birthDate;
 @property(nonatomic, retain) NSDate *dateOfEmployment;
-@property(nonatomic, assign) Employee *manager;
+//use strong not assign..the app code told me to use strong
+@property(nonatomic, strong) Employee *manager;
 @property(nonatomic, retain) NSString *ssn;
 @property(nonatomic, readonly) NSTimeInterval age;
 @property(nonatomic, assign) double salary;
@@ -32,7 +33,7 @@
               birthDate:(NSDate *)inBirthDate
                     ssn:(NSString *)inSSN;
 
-- (void)giveRaise:(double)presentAge;
+- (void)giveRaise:(double)percentage;
 
 - (double)bonus;
 
