@@ -41,7 +41,7 @@
                lastName:(NSString *)inLastName
               birthDate:(NSDate *)inBirthDate
                     ssn:(NSString *)inSSN {
-    if (self = [super init]) {
+    if (self = [self init]) {
         [self setFirstName:inFirstName];
         [self setLastName:inLastName];
         [self setBirthDate:inBirthDate];

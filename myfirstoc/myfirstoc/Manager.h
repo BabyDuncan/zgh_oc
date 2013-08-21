@@ -9,12 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Employee.h"
 
-@interface Manager : NSObject {
+@interface Manager : Employee {
     NSMutableArray *reports;
 }
 
 @property(nonatomic, retain) NSMutableArray *reports;
-@property(nonatomic, assign) double salary;
 
 - (void)addReport:(Employee *)inEmployee;
 

@@ -8,13 +8,11 @@
 
 #import "Manager.h"
 
-
 @implementation Manager
 @synthesize reports;
-@synthesize salary;
 
 - (void)dealloc {
-    for (Employee *employee : reports) {
+    for (Employee *employee in reports) {
         [employee setManager:nil];
     }
 }
@@ -23,6 +21,7 @@
     if (self = [super init]) {
         [self setReports:[NSMutableArray array]];
     }
+    return self;
 }
 
 - (void)addReport:(Employee *)inEmployee {
