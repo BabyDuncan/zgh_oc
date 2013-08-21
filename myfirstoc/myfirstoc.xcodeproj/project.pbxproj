@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E31D3F8117C45712002F2D5C /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = E31D3F8017C45712002F2D5C /* Employee.m */; };
 		E366DAAB17C1C1D8004922A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E366DAAA17C1C1D8004922A9 /* Foundation.framework */; };
 		E366DAAE17C1C1D8004922A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E366DAAD17C1C1D8004922A9 /* main.m */; };
 		E366DAB217C1C1D8004922A9 /* myfirstoc.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E366DAB117C1C1D8004922A9 /* myfirstoc.1 */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E31D3F7F17C45712002F2D5C /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		E31D3F8017C45712002F2D5C /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		E366DAA717C1C1D8004922A9 /* myfirstoc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = myfirstoc; sourceTree = BUILT_PRODUCTS_DIR; };
 		E366DAAA17C1C1D8004922A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E366DAAD17C1C1D8004922A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 				E366DAAD17C1C1D8004922A9 /* main.m */,
 				E366DAB117C1C1D8004922A9 /* myfirstoc.1 */,
 				E366DAAF17C1C1D8004922A9 /* Supporting Files */,
+				E31D3F7F17C45712002F2D5C /* Employee.h */,
+				E31D3F8017C45712002F2D5C /* Employee.m */,
 			);
 			path = myfirstoc;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			files = (
 				E366DAAE17C1C1D8004922A9 /* main.m in Sources */,
 				E366DABA17C1C363004922A9 /* Foobar.m in Sources */,
+				E31D3F8117C45712002F2D5C /* Employee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +254,7 @@
 				E366DAB717C1C1D8004922A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
