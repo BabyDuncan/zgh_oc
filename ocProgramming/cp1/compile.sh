@@ -1,3 +1,3 @@
 #!/bin/bash
 
-clang -fobjc-arc -framework Foundation main.m -o zgh
+clang -fobjc-arc -framework Foundation $1 -o $2
