@@ -11,6 +11,7 @@
 		E3282B5417CB3DD4005D593B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3282B5317CB3DD4005D593B /* main.m */; };
 		E3282B5817CB3DD4005D593B /* Complex.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E3282B5717CB3DD4005D593B /* Complex.1 */; };
 		E3282B6017CB3DE2005D593B /* Complex.m in Sources */ = {isa = PBXBuildFile; fileRef = E3282B5F17CB3DE2005D593B /* Complex.m */; };
+		E3282B6317CB474E005D593B /* MyException.m in Sources */ = {isa = PBXBuildFile; fileRef = E3282B6217CB474E005D593B /* MyException.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		E3282B5717CB3DD4005D593B /* Complex.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Complex.1; sourceTree = "<group>"; };
 		E3282B5E17CB3DE2005D593B /* Complex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Complex.h; sourceTree = "<group>"; };
 		E3282B5F17CB3DE2005D593B /* Complex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Complex.m; sourceTree = "<group>"; };
+		E3282B6117CB474E005D593B /* MyException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyException.h; sourceTree = "<group>"; };
+		E3282B6217CB474E005D593B /* MyException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyException.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				E3282B5517CB3DD4005D593B /* Supporting Files */,
 				E3282B5E17CB3DE2005D593B /* Complex.h */,
 				E3282B5F17CB3DE2005D593B /* Complex.m */,
+				E3282B6117CB474E005D593B /* MyException.h */,
+				E3282B6217CB474E005D593B /* MyException.m */,
 			);
 			path = Complex;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			files = (
 				E3282B5417CB3DD4005D593B /* main.m in Sources */,
 				E3282B6017CB3DE2005D593B /* Complex.m in Sources */,
+				E3282B6317CB474E005D593B /* MyException.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

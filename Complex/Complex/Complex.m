@@ -7,12 +7,14 @@
 //
 
 #import "Complex.h"
+#import "MyException.h"
 
 @implementation Complex
 
 @synthesize real,imaginary;
 
 -(void) print;{
+    @throw [MyException exceptionWithName:@"testException" reason:@"noreason" userInfo:nil];
     printf("real is %f,imaginary is %f",real,imaginary);
 }
 

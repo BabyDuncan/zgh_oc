@@ -23,12 +23,17 @@ int main(int argc, const char * argv[])
             [complex print];
         }
         @catch (NSException *exception) {
-            NSLog(@"%@",exception);
+            NSLog(@"=========%@,%@",[exception name],[exception reason]);
         }
         @finally {
             NSLog(@"done!");
         }
         
+         NSLog(@"done!");
+         NSLog(@"done!");
+         NSLog(@"done!");
+         NSLog(@"done!");
+         NSLog(@"done!");
     }
     return 0;
 }
