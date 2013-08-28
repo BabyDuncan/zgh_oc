@@ -25,7 +25,7 @@
 - (void)testExample {
     NSLog(@"test!!");
     __block id blockResponseObject = nil;
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://httpbin.org/ip"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://10.2.58.121:8080/v2/profile/index.htm"]];
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         blockResponseObject = responseObject;
@@ -33,6 +33,7 @@
     }                                failure:nil];
 
     [operation start];
+    sleep(5);
 //    expect([operation isFinished]).will.beTruthy();
 //    expect(blockResponseObject).willNot.beNil();
 
