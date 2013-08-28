@@ -428,6 +428,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ochc/ochc-Prefix.pch";
 				INFOPLIST_FILE = "ochcTests/ochcTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"${PROJECT_DIR}/ochcTests\"/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -443,6 +444,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ochc/ochc-Prefix.pch";
 				INFOPLIST_FILE = "ochcTests/ochcTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"${PROJECT_DIR}/ochcTests\"/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};

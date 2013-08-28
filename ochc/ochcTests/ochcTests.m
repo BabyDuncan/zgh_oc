@@ -8,7 +8,12 @@
 
 #import "ochcTests.h"
 
-@implementation ochcTests
+
+@implementation ochcTests {
+
+    NSString *result;
+
+}
 
 - (void)setUp {
     [super setUp];
@@ -23,20 +28,17 @@
 }
 
 - (void)testExample {
-    NSLog(@"test!!");
-    __block id blockResponseObject = nil;
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://10.2.58.121:8080/v2/profile/index.htm"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]];
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        blockResponseObject = responseObject;
-        NSLog(@"OK");
-    }                                failure:nil];
-
+        NSLog(@"Success: %@", operation.responseString);
+        result = operation.responseString;
+    }                                failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Failure: %@", error);
+    }];
     [operation start];
-    sleep(5);
-//    expect([operation isFinished]).will.beTruthy();
-//    expect(blockResponseObject).willNot.beNil();
-
+    CFRunLoopRun();
+    NSLog(@"result is %@", result);
 }
 
 @end
