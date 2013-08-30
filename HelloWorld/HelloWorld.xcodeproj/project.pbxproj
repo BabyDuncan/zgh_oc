@@ -454,6 +454,7 @@
 				E3D6A04C17CEFB8900BFC2E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3D6A04D17CEFB8900BFC2E8 /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +463,7 @@
 				E3D6A04F17CEFB8900BFC2E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
